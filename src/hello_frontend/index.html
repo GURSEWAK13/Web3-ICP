@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>IC Hello Starter</title>
+  <base href="/" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .product-container {
+        display: flex;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .product-image {
+        width: 50%;
+        padding: 20px;
+    }
+    .product-image img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .product-details {
+        width: 50%;
+        padding: 20px;
+    }
+    .product-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .product-price {
+        font-size: 28px;
+        color: #4a4a4a;
+        margin-bottom: 15px;
+    }
+    .add-to-cart {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .product-description {
+        color: #666;
+        line-height: 1.6;
+    }
+</style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <div>
+    <div class="product-container">
+      <div class="product-image">
+          <img src="/api/placeholder/400/400" alt="Product Image">
+      </div>
+      <div class="product-details">
+          <h1 class="product-title">Wireless Headphones</h1>
+          <div class="product-price">$129.99</div>
+          <button class="add-to-cart">Add to Cart</button>
+          <div class="product-description">
+              <p>High-quality wireless headphones with noise cancellation, 
+              20-hour battery life, and comfortable over-ear design. 
+              Perfect for music lovers and professionals.</p>
+          </div>
+      </div>
+  </div>
+  </div>
+</body>
+
+</html>
